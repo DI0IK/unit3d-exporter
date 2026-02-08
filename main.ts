@@ -58,7 +58,7 @@ app.get("/metrics", async (_req, res) => {
 				(await data.json()) as { [key: string]: string | number };
 			Object.entries(dataObject).forEach(([key, rawValue]) => {
 				const value = getValue(rawValue);
-				if (value)
+				if (value !== null)
 					response += `tracker_unit3d_${key}{tracker="${tracker}"} ${value}\n`;
 			});
 		} catch (e) {
