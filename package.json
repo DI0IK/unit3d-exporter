@@ -1,0 +1,23 @@
+{
+	"name": "unit3d-exporter",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.24.0",
+	"type": "module",
+	"dependencies": {
+		"express": "^5.2.1",
+		"node-fetch": "^3.3.2",
+		"typescript": "^5.9.3"
+	},
+	"devDependencies": {
+		"@types/express": "^5.0.6",
+		"@types/node": "^25.2.2"
+	}
+}
