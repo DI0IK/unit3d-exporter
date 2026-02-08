@@ -4,6 +4,8 @@ FROM base AS builder
 
 WORKDIR /app
 
+RUN apk add pnpm
+
 COPY package.json pnpm-lock.yaml /app/
 
 RUN pnpm install
