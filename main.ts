@@ -29,7 +29,11 @@ app.get("/metrics", async (_req, res) => {
 		}
 	}
 
-	res.send(response);
+	res
+		.contentType(
+			"text/plain; version=0.0.4; charset=utf-8; escaping=underscores",
+		)
+		.send(response);
 });
 
 app.listen(3000, () => {
